@@ -39,60 +39,13 @@ df.head()
 ```
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Password</th>
-      <th>Strength_Level</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Activate9999</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>bbbbadjurer4</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>asdfadinole5</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>acetoinAsdf</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>qweabsurdly3</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+|   | Password        | Strength_Level |
+|---|-----------------|---------------|
+| 0 | Activate9999    | 1             |
+| 1 | bbbbadjurer4    | 1             |
+| 2 | asdfadinole5    | 1             |
+| 3 | acetoinAsdf     | 1             |
+| 4 | qweabsurdly3    | 1             |
 
 
 ### 2. Формування вибірки для навчання гібридної нейронної мережі.
@@ -172,99 +125,13 @@ df.head()
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Password</th>
-      <th>Strength_Level</th>
-      <th>length</th>
-      <th>has_upper</th>
-      <th>has_lower</th>
-      <th>has_digit</th>
-      <th>has_special</th>
-      <th>has_seq</th>
-      <th>maxHackTimeH</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Activate9999</td>
-      <td>1</td>
-      <td>12</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>8961852118</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>bbbbadjurer4</td>
-      <td>1</td>
-      <td>12</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>13162170</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>asdfadinole5</td>
-      <td>1</td>
-      <td>12</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>13162170</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>acetoinAsdf</td>
-      <td>1</td>
-      <td>11</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>20880182</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>qweabsurdly3</td>
-      <td>1</td>
-      <td>12</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>13162170</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+|   | Password        | Strength_Level | length | has_upper | has_lower | has_digit | has_special | has_seq | maxHackTimeH |
+|---|-----------------|---------------|--------|-----------|-----------|-----------|-------------|---------|--------------|
+| 0 | Activate9999    | 1             | 12     | True      | True      | True      | False       | True    | 8961852118   |
+| 1 | bbbbadjurer4    | 1             | 12     | False     | True      | True      | False       | False   | 13162170     |
+| 2 | asdfadinole5    | 1             | 12     | False     | True      | True      | False       | True    | 13162170     |
+| 3 | acetoinAsdf     | 1             | 11     | True      | True      | False     | False       | False   | 20880182     |
+| 4 | qweabsurdly3    | 1             | 12     | False     | True      | True      | False       | False   | 13162170     |
 
 
 
